@@ -1,35 +1,35 @@
 import { Card } from "@/components/ui/card";
-import { Package, TrendingUp, Clock, AlertCircle } from "lucide-react";
+import { Package, TrendingDown, DollarSign, AlertCircle } from "lucide-react";
 
 const MetricsCards = () => {
   const metrics = [
     {
-      title: "Active Shipments",
-      value: "127",
-      change: "+12%",
+      title: "Total SKUs",
+      value: "1,247",
+      change: "+23 this month",
       icon: Package,
       color: "text-primary",
     },
     {
-      title: "On-Time Delivery",
-      value: "94.2%",
-      change: "+2.3%",
-      icon: TrendingUp,
+      title: "Low Stock Items",
+      value: "18",
+      change: "Needs attention",
+      icon: TrendingDown,
+      color: "text-warning",
+    },
+    {
+      title: "Inventory Value",
+      value: "$2.4M",
+      change: "+8.5%",
+      icon: DollarSign,
       color: "text-success",
     },
     {
-      title: "Avg Transit Time",
-      value: "3.4 days",
-      change: "-0.5d",
-      icon: Clock,
-      color: "text-secondary",
-    },
-    {
-      title: "Exceptions",
-      value: "8",
-      change: "-3",
+      title: "Active Alerts",
+      value: "12",
+      change: "5 critical",
       icon: AlertCircle,
-      color: "text-warning",
+      color: "text-destructive",
     },
   ];
 

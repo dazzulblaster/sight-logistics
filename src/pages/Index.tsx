@@ -2,40 +2,40 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
-import { TrendingUp, Map, Brain, Package, Clock, Shield } from "lucide-react";
+import { TrendingUp, Brain, Package, AlertCircle, BarChart3, Scan } from "lucide-react";
 import heroImage from "@/assets/hero-supply-chain.jpg";
 
 const Index = () => {
   const features = [
     {
-      icon: Map,
-      title: "Real-Time Tracking",
-      description: "Monitor shipments globally with live updates and location tracking.",
-    },
-    {
-      icon: Brain,
-      title: "AI Optimization",
-      description: "Get intelligent recommendations for routes, costs, and efficiency.",
-    },
-    {
-      icon: Clock,
-      title: "Milestone Management",
-      description: "Track every step of your supply chain with detailed milestone tracking.",
+      icon: Package,
+      title: "Smart Reorder Suggestions",
+      description: "AI-powered safety stock calculations with one-click PO creation.",
     },
     {
       icon: TrendingUp,
-      title: "Predictive Analytics",
-      description: "Forecast demand and identify potential disruptions before they happen.",
+      title: "Demand Forecasting",
+      description: "28-day moving average with seasonality and confidence bands.",
     },
     {
-      icon: Shield,
-      title: "Risk Management",
-      description: "Proactive alerts for weather, delays, and supply chain risks.",
+      icon: Brain,
+      title: "Smart Allocation",
+      description: "Auto-allocate inventory by priority when stock is insufficient.",
     },
     {
-      icon: Package,
-      title: "Inventory Insights",
-      description: "Optimize inventory levels with AI-powered demand forecasting.",
+      icon: AlertCircle,
+      title: "Exception Alerts",
+      description: "Real-time alerts for low stock, late POs, and demand surges.",
+    },
+    {
+      icon: BarChart3,
+      title: "Supplier Reliability",
+      description: "Lead time tracking, performance scoring, and switch recommendations.",
+    },
+    {
+      icon: Scan,
+      title: "OCR Automation",
+      description: "Extract data from GRN documents automatically with AI.",
     },
   ];
 
@@ -52,13 +52,13 @@ const Index = () => {
         <div className="relative container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-              Complete{" "}
+              Smart{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Supply Chain Visibility
+                Inventory Management
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Track, optimize, and predict your entire supply chain with AI-powered insights and real-time monitoring
+              AI-powered reorder suggestions, demand forecasting, and supply chain optimization
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Link to="/dashboard">
@@ -79,10 +79,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Everything You Need for Supply Chain Excellence
+            Everything You Need for Inventory Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Powerful features designed to give you complete control and visibility
+            Powerful features to optimize stock levels and supplier relationships
           </p>
         </div>
 
@@ -118,10 +118,10 @@ const Index = () => {
       <section className="container mx-auto px-4 py-20">
         <Card className="p-12 text-center bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ready to Transform Your Supply Chain?
+            Ready to Optimize Your Inventory?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join industry leaders using ChainVision for complete supply chain visibility
+            Join businesses using Stockly for smarter inventory and supply chain decisions
           </p>
           <Link to="/dashboard">
             <Button size="lg" className="gap-2">
