@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ShoppingCart, TrendingDown, AlertTriangle } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const InventoryReorderPanel = () => {
+  const navigate = useNavigate();
+  
   const reorderItems = [
     {
       sku: "SKU-1024",
@@ -111,7 +114,11 @@ const InventoryReorderPanel = () => {
                   {item.leadTime}
                 </TableCell>
                 <TableCell className="text-center">
-                  <Button size="sm" className="gap-1">
+                  <Button 
+                    size="sm" 
+                    className="gap-1"
+                    onClick={() => navigate(`/create-po?sku=${item.sku}&name=${encodeURIComponent(item.name)}&qty=${item.reorderQty}`)}
+                  >
                     <ShoppingCart className="h-3 w-3" />
                     Create PO
                   </Button>
