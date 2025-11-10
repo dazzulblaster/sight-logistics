@@ -20,10 +20,13 @@ const Navigation = () => {
             <Button variant="ghost">Home</Button>
           </Link>
           <Link to="/dashboard">
-            <Button variant="default" className="gap-2">
-              <TrendingUp className="h-4 w-4" />
-              Dashboard
-            </Button>
+            <Button variant="ghost">Dashboard</Button>
+          </Link>
+          <Link to="/stocks">
+            <Button variant="ghost">Stocks</Button>
+          </Link>
+          <Link to="/po-history">
+            <Button variant="ghost">PO History</Button>
           </Link>
         </div>
       </div>
