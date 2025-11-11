@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import { TrendingUp, Brain, Package, AlertCircle, BarChart3, Scan } from "lucide-react";
 import heroImage from "@/assets/hero-supply-chain.jpg";
+import { Chatbot } from "@/components/Chatbot";
 
 const Index = () => {
   const features = [
@@ -131,6 +132,7 @@ const Index = () => {
           </Link>
         </Card>
       </section>
+      <Chatbot />
     </div>
   );
 };

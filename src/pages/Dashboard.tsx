@@ -8,6 +8,7 @@ import SupplierScorecard from "@/components/SupplierScorecard";
 import OrderTracker from "@/components/OrderTracker";
 import OCRUpload from "@/components/OCRUpload";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Chatbot } from "@/components/Chatbot";
 
 const Dashboard = () => {
   return (
@@ -58,6 +59,7 @@ const Dashboard = () => {
           </TabsContent>
         </Tabs>
       </main>
+      <Chatbot />
     </div>
   );
 };
