@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Layers, AlertCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SmartAllocationPanel = () => {
   const allocations = [
@@ -100,7 +101,9 @@ const SmartAllocationPanel = () => {
           </div>
 
           <div className="flex justify-end gap-2">
-            <Button variant="outline" size="sm">Review Allocation</Button>
+            <Link to="/review-allocation">
+              <Button variant="outline" size="sm">Review Allocation</Button>
+            </Link>
             <Button size="sm">Confirm & Process</Button>
           </div>
         </div>

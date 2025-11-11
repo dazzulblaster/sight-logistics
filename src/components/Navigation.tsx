@@ -28,6 +28,9 @@ const Navigation = () => {
           <Link to="/po-history">
             <Button variant="ghost">PO History</Button>
           </Link>
+          <Link to="/review-allocation">
+            <Button variant="ghost">Review</Button>
+          </Link>
         </div>
       </div>
     </nav>

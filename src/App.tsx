@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import CreatePO from "./pages/CreatePO";
 import POHistory from "./pages/POHistory";
 import Stocks from "./pages/Stocks";
+import ReviewAllocation from "./pages/ReviewAllocation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/create-po" element={<CreatePO />} />
           <Route path="/po-history" element={<POHistory />} />
           <Route path="/stocks" element={<Stocks />} />
+          <Route path="/review-allocation" element={<ReviewAllocation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
