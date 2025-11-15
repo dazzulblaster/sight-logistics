@@ -31,6 +31,9 @@ const Navigation = () => {
           <Link to="/review-allocation">
             <Button variant="ghost">Review</Button>
           </Link>
+          <Link to="/integrations">
+            <Button variant="ghost">Integrations</Button>
+          </Link>
         </div>
       </div>
     </nav>
