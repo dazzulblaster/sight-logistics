@@ -10,6 +10,7 @@ import POHistory from "./pages/POHistory";
 import Stocks from "./pages/Stocks";
 import ReviewAllocation from "./pages/ReviewAllocation";
 import GRNReview from "./pages/GRNReview";
+import Integrations from "./pages/Integrations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/stocks" element={<Stocks />} />
           <Route path="/review-allocation" element={<ReviewAllocation />} />
           <Route path="/grn-review" element={<GRNReview />} />
+          <Route path="/integrations" element={<Integrations />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
